@@ -63,7 +63,7 @@ class App {
     this.category,
   });
 
-  static List<App> fromList(List<Map<String, dynamic>> list) {
+  static List<App> fromList(list) {
     return List<App>.generate(list.length, (int i) {
       final Map<dynamic, dynamic> map = list[i];
       assert(map['app_name'] != null);
